@@ -6,17 +6,13 @@
 /*   By: dabeloos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/09 09:54:23 by dabeloos          #+#    #+#             */
-/*   Updated: 2018/08/09 12:10:48 by dabeloos         ###   ########.fr       */
+/*   Updated: 2018/08/09 15:25:34 by dabeloos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int ft_putchar(char c)
-{
-	write(1, &c, 1);
-	return (0);
-}
+int ft_putchar(char c);
 
 void ft_print_numbers(void)
 {
@@ -27,12 +23,6 @@ void ft_print_numbers(void)
 	{
 		converter = '0' + count;
 		ft_putchar(converter);
-		count++;
+		count ++;
 	}
-}
-
-int main()
-{
-	ft_print_numbers();
-	return (0);
 }
