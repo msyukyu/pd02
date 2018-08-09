@@ -6,21 +6,17 @@
 /*   By: dabeloos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/09 13:39:46 by dabeloos          #+#    #+#             */
-/*   Updated: 2018/08/09 14:11:30 by dabeloos         ###   ########.fr       */
+/*   Updated: 2018/08/09 15:32:12 by dabeloos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int ft_putchar(char c)
-{
-	write(1, &c, 1);
-	return (0);
-}
+int ft_putchar(char c);
 
 void ft_display_digits(int digit_0, int digit_1, int digit_2)
 {
-	if (!(digit_0 == 0 && digit_1 == 1 && digit_2 == 2))
+	if ( ! (digit_0 == 0 && digit_1 == 1 && digit_2 == 2))
 	{
 		ft_putchar(',');
 		ft_putchar(' ');
@@ -55,10 +51,3 @@ void ft_print_comb(void)
 		digit_2 = digit_1 + 1;
 	}
 }
-
-int main()
-{
-	ft_print_comb();
-	return (0);
-}
-
