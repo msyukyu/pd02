@@ -6,7 +6,7 @@
 /*   By: dabeloos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/09 19:08:27 by dabeloos          #+#    #+#             */
-/*   Updated: 2018/08/09 20:24:27 by dabeloos         ###   ########.fr       */
+/*   Updated: 2018/08/09 20:37:27 by dabeloos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,12 +43,19 @@ void ft_print_combn(int n)
 		}
 		while (crow < n)
 		{
+			/**
+			 * retenir la valeur de la colonne precedente au cas ou on
+			 * adapte avec mvalue. a faire dans le while
+			 **/
 			if (crow == mrow)
 			{
 				cvalue = mvalue;
 			}
 			ft_putchar(cvalue + '0');
-			
+			if (crow + 1 == n)
+			{
+
+			}
 			crow ++;
 		}
 	}
