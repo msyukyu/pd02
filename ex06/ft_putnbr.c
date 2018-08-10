@@ -6,18 +6,19 @@
 /*   By: dabeloos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/09 16:25:36 by dabeloos          #+#    #+#             */
-/*   Updated: 2018/08/09 18:39:59 by dabeloos         ###   ########.fr       */
+/*   Updated: 2018/08/10 09:28:47 by dabeloos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int ft_putchar(char c);
+int		ft_putchar(char c);
 
-void ft_putnbr(int nb)
+void	ft_putnbr(int nb)
 {
-	int divisor;
-	int digit;
+	int	divisor;
+	int	digit;
+
 	divisor = 1000000000;
 	if (nb < 0)
 	{
@@ -28,7 +29,7 @@ void ft_putnbr(int nb)
 		digit = (nb / divisor) % 10;
 		if (nb < 0)
 		{
-			digit *= - 1;
+			digit *= -1;
 		}
 		ft_putchar(digit + '0');
 		if (divisor == 1)
