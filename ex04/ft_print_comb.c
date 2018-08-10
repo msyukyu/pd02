@@ -6,7 +6,7 @@
 /*   By: dabeloos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/09 13:39:46 by dabeloos          #+#    #+#             */
-/*   Updated: 2018/08/10 09:15:28 by dabeloos         ###   ########.fr       */
+/*   Updated: 2018/08/10 09:22:01 by dabeloos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ void	ft_display_digits(int digit_0, int digit_1, int digit_2)
 
 void	ft_print_comb(void)
 {
-	int digit_0;
-	int digit_1;
-	int digit_2;
+	int	digit_0;
+	int	digit_1;
+	int	digit_2;
 
 	digit_0 = 0;
 	digit_1 = 1;
